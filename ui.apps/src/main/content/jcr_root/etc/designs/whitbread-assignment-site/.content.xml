@@ -5,5 +5,27 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="WhiteBread Assignment Site's Design"
         sling:resourceType="wcm/core/components/designer">
+        <page-2-columns jcr:primaryType="nt:unstructured">
+            <header jcr:primaryType="nt:unstructured">
+                <header-iparsys
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/iparsys"
+                    components="[/libs/wcm/foundation/components/text]"/>
+            </header>
+            <parsys1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[/libs/foundation/components/reference,/libs/foundation/components/download,/libs/foundation/components/sitemap]"/>
+            <parsys2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[/libs/foundation/components/textimage,/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/title]"/>
+            <footer jcr:primaryType="nt:unstructured">
+                <footer-iparsys
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/iparsys"
+                    components="[/libs/wcm/foundation/components/text]"/>
+            </footer>
+        </page-2-columns>
     </jcr:content>
 </jcr:root>
