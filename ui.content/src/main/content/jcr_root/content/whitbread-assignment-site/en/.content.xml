@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/etc/designs/whitbread-assignment-site"
-        cq:template="/apps/whitbread-assignment-site/templates/page-content"
+        cq:template="/apps/whitbread-assignment-site/templates/page-2-columns"
         jcr:primaryType="cq:PageContent"
         jcr:title="English"
-        sling:resourceType="whitbread-assignment-site/components/structure/page"/>
+        sling:resourceType="whitbread-assignment-site/components/structure/layouts/page-2-columns">
+        <header
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="whitbread-assignment-site/components/structure/elements/header">
+            <header-iparsys
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="&lt;p>WhitBread&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </header-iparsys>
+        </header>
+        <parsys1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <sitemap
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/sitemap"/>
+        </parsys1>
+        <parsys2
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/title"/>
+            <textimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/textimage"
+                text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a tempus lacus. Aliquam erat volutpat. In dignissim auctor gravida. Donec tortor massa, cursus et faucibus ut, luctus a nibh. Donec eget hendrerit neque, et rhoncus tellus. Nam quis sagittis sapien. In vestibulum laoreet ullamcorper. Donec consectetur eu nisi vel molestie. Nullam risus magna, eleifend id odio vel, malesuada tincidunt quam. Sed vehicula tellus sollicitudin sagittis consequat. Maecenas dignissim sagittis consequat. Aliquam id sodales ante, consequat aliquam nibh. Mauris dolor tellus, egestas id leo vel, finibus dictum erat. Cras et orci a lectus luctus ullamcorper ut et tellus. Nam tincidunt velit eget lectus egestas, ac scelerisque eros convallis. In hac habitasse platea dictumst.&lt;/p>&#xa;&lt;p>Nam semper erat vel sem vulputate, et commodo orci sollicitudin. Nullam sit amet diam tempor ante tincidunt accumsan. Nullam consectetur, dolor a convallis venenatis, erat neque convallis purus, in eleifend sem eros nec lorem. Vivamus nec arcu non lorem sodales luctus. Sed placerat, orci ut ullamcorper convallis, libero tortor pellentesque sapien, accumsan fermentum felis velit vel felis. Donec viverra bibendum nisl, et tempus sem porta a. Sed aliquet, neque eu tincidunt sodales, tellus ante fermentum mauris, ac iaculis justo libero vel erat. Maecenas tempus est a metus mattis, sed maximus turpis venenatis. Nulla interdum mauris sed eleifend finibus. Proin eu turpis mi. Nunc vehicula ex eget enim molestie, vel varius neque lobortis. Nullam porttitor elit eget est molestie, in porttitor ex posuere. Vestibulum a nunc elementum, facilisis elit quis, volutpat libero. Curabitur varius eget sapien ac blandit. Mauris semper quis lacus ac rutrum.&lt;/p>&#xa;&lt;p>Nullam eget ipsum tempus, congue nunc non, imperdiet arcu. Nulla dictum varius ligula, a aliquet augue. Maecenas scelerisque quis est nec gravida. Aliquam et neque quis odio dignissim laoreet. Etiam et orci sem. In hac habitasse platea dictumst. Aenean at neque eros. Maecenas volutpat suscipit lectus molestie viverra.&lt;/p>&#xa;"
+                textIsRich="true"/>
+        </parsys2>
+        <footer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="whitbread-assignment-site/components/structure/elements/footer">
+            <footer-iparsys
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="&lt;p style=&quot;text-align: center;&quot;>Footer Table of Contents&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </footer-iparsys>
+        </footer>
+    </jcr:content>
 </jcr:root>

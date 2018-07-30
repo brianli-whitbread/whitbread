@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/whitbread-assignment-site"/>
     <filter root="/apps/sling" />
+    <filter root="/etc/designs/whitbread-assignment-site"/>
 </workspaceFilter>
