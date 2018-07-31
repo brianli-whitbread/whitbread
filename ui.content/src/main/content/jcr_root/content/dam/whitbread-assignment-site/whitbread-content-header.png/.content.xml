@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:mixinTypes="[mix:referenceable]"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
     jcr:uuid="b247c9e0-e563-4640-a0c2-012b64a64aa6">
     <jcr:content
+        cq:name="whitbread-content-header.png"
+        cq:parentPath="/content/dam/whitbread-assignment-site"
         dam:assetState="processed"
         dam:relativePath="whitbread-assignment-site/whitbread-content-header.png"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}32"
             dam:Comments="Software: Adobe ImageReady&#xa;XML:com.adobe.xmp: &lt;?xpacket begin=&quot;﻿&quot; id=&quot;W5M0MpCehiHzreSzNTczkc9d&quot;?> &lt;x:xmpmeta xmlns:x=&quot;adobe:ns:meta/&quot; x:xmptk=&quot;Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        &quot;> &lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;> &lt;rdf:Description rdf:about=&quot;&quot; xmlns:xmp=&quot;http://ns.adobe.com/xap/1.0/&quot; xmlns:xmpMM=&quot;http://ns.adobe.com/xap/1.0/mm/&quot; xmlns:stRef=&quot;http://ns.adobe.com/xap/1.0/sType/ResourceRef#&quot; xmp:CreatorTool=&quot;Adobe Photoshop CC (Windows)&quot; xmpMM:InstanceID=&quot;xmp.iid:1B8A757EDE6411E784A1CC5FCCA56FBA&quot; xmpMM:DocumentID=&quot;xmp.did:1B8A757FDE6411E784A1CC5FCCA56FBA&quot;> &lt;xmpMM:DerivedFrom stRef:instanceID=&quot;xmp.iid:1B8A757CDE6411E784A1CC5FCCA56FBA&quot; stRef:documentID=&quot;xmp.did:1B8A757DDE6411E784A1CC5FCCA56FBA&quot;/> &lt;/rdf:Description> &lt;/rdf:RDF> &lt;/x:xmpmeta> &lt;?xpacket end=&quot;r&quot;?>&#xa;"
-            dam:extracted="{Date}2018-07-30T20:31:36.876+01:00"
+            dam:extracted="{Date}2018-07-31T20:57:41.836+01:00"
             dam:Fileformat="PNG"
             dam:MIMEtype="image/png"
             dam:Numberofimages="{Long}1"
@@ -20,9 +23,10 @@
             dam:Physicalwidthindpi="{Long}-1"
             dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="5f68f663ef163999ee67efe5dc123c6890312cbc"
+            dam:sha1="b41d123ed86e15b661d7fe3e2ed33c7676943c4d"
             dam:size="{Long}765986"
             dc:format="image/png"
+            dc:modified="{Date}2018-07-31T20:57:41.813+01:00"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}553"

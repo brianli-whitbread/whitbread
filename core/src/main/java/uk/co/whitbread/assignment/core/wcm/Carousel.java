@@ -18,7 +18,7 @@ public class Carousel extends WCMUsePojo {
     private static final String JSON_PROP_DESCRIPTION = "description";
     private static final String JSON_PROP_IMAGE_SRC = "imageSrc";
 
-    private static ArrayList<HashMap<String, String>> carouselItems = new ArrayList<>();
+    private ArrayList<HashMap<String, String>> carouselItems = new ArrayList<>();
 
     @Override
     public void activate() throws Exception {
@@ -53,7 +53,7 @@ public class Carousel extends WCMUsePojo {
         return objectArray;
     }
 
-    public static ArrayList<HashMap<String, String>> getCarouselItems() {
+    public ArrayList<HashMap<String, String>> getCarouselItems() {
         return carouselItems;
     }
 
