@@ -34,6 +34,10 @@
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Welcome to Whitbread.com"
                 sling:resourceType="wcm/foundation/components/title"/>
+            <carousel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="whitbread-assignment-site/components/content/carousel"
+                carouselItemsJSON="[{&quot;title&quot;:&quot;Lorem ipsum dolor sit amet&quot;\,&quot;description&quot;:&quot;&lt;p>entum. Nulla vel rutrum ligula. Sed hendrerit interdum orci a posuere.&lt;br>\\n&lt;/p>\\n&quot;\,&quot;imageSrc&quot;:&quot;/content/dam/whitbread-assignment-site/carousel/carousel-1.png&quot;},{&quot;title&quot;:&quot;Lorem ipsum dolor sit amet&quot;\,&quot;description&quot;:&quot;&lt;p>entum. Nulla vel rutrum ligula. Sed hendrerit interdum orci a posuere.&lt;br>\\n&lt;/p>\\n&quot;\,&quot;imageSrc&quot;:&quot;/content/dam/whitbread-assignment-site/carousel/carousel-2.png&quot;},{&quot;title&quot;:&quot;Lorem ipsum &quot;\,&quot;description&quot;:&quot;&lt;p>trum ligula. Sed hendrerit interdum orci a posuere.&lt;br>\\n&lt;/p>\\n&quot;\,&quot;imageSrc&quot;:&quot;/content/dam/whitbread-assignment-site/carousel/carousel-3.png&quot;}]"/>
             <textimage
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/textimage"

@@ -19,7 +19,7 @@
             <parsys2
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"
-                components="[/libs/foundation/components/textimage,/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/title]"/>
+                components="[/libs/foundation/components/textimage,/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/title,/apps/whitbread-assignment-site/components/content/carousel]"/>
             <footer jcr:primaryType="nt:unstructured">
                 <footer-iparsys
                     jcr:primaryType="nt:unstructured"

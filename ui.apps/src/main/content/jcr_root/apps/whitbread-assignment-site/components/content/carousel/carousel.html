@@ -1,0 +1,24 @@
+<sly data-sly-use.carousel="uk.co.whitbread.assignment.core.wcm.Carousel">
+    <div id="${carousel.carouselID}" class="carousel slide" data-ride="${carousel.carouselID}">
+        <div class="carousel-inner" data-sly-test.carouselItems="${carousel.carouselItems}">
+            <sly data-sly-test="${carouselItems}" data-sly-list.carouselItem="${carouselItems}">
+                <div class="item ${carouselItemList.index == 0 ? 'active' : ''}">
+                    <img src="${carouselItem.imageSrc @ context='uri'}" alt="${carouselItem.title}"/>
+                    <div class="carousel-caption">
+                        <h3>${carouselItem.title @ context='text'}</h3>
+                        ${carouselItem.description @ context='html'}
+                    </div>
+                </div>
+            </sly>
+        </div>
+        <a href="#${carousel.carouselID}" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#${carousel.carouselID}" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</sly>
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="cq-placeholder" data-emptytext="Carousel ${carousel.carouselItems ? '' : '(No carousel items placed)'}"></p>
+
+
