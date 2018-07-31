@@ -15,7 +15,7 @@
             <parsys1
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"
-                components="[/libs/foundation/components/reference,/libs/foundation/components/download,/libs/foundation/components/sitemap]"/>
+                components="[/libs/foundation/components/reference,/libs/foundation/components/download,/libs/foundation/components/sitemap,/apps/whitbread-assignment-site/components/content/child-pages-list]"/>
             <parsys2
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"

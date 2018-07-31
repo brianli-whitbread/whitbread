@@ -23,9 +23,11 @@
         <parsys1
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
-            <sitemap
+            <child_pages_list
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/sitemap"/>
+                sling:resourceType="whitbread-assignment-site/components/content/child-pages-list"
+                parentPagePath="/content/whitbread-assignment-site"
+                title="Child Pages "/>
         </parsys1>
         <parsys2
             jcr:primaryType="nt:unstructured"

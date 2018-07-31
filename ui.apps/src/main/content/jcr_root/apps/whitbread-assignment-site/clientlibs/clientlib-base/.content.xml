@@ -4,4 +4,4 @@
     allowProxy="{Boolean}true"
     categories="[whitbread-assignment-site.base]"
     dependencies="[jquery,cq.social.bootstrap.3]"
-    embed="[]"/>
+    embed="[whitbread-assignment-site.child-pages-list]"/>
