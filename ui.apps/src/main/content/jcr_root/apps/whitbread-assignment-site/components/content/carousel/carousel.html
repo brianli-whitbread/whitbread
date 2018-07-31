@@ -1,5 +1,5 @@
 <sly data-sly-use.carousel="uk.co.whitbread.assignment.core.wcm.Carousel">
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div id="${carousel.carouselID}" class="carousel slide" data-ride="${carousel.carouselID}">
         <div class="carousel-inner" data-sly-test.carouselItems="${carousel.carouselItems}">
             <sly data-sly-test="${carouselItems}" data-sly-list.carouselItem="${carouselItems}">
                 <div class="item ${carouselItemList.index == 0 ? 'active' : ''}">
@@ -11,10 +11,10 @@
                 </div>
             </sly>
         </div>
-        <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <a href="#${carousel.carouselID}" class="left carousel-control" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a href="#carousel" class="right carousel-control" data-slide="next">
+        <a href="#${carousel.carouselID}" class="right carousel-control" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>

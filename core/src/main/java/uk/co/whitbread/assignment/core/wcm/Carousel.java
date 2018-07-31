@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.UUID;
 
 public class Carousel extends WCMUsePojo {
 
@@ -18,6 +19,7 @@ public class Carousel extends WCMUsePojo {
     private static final String JSON_PROP_DESCRIPTION = "description";
     private static final String JSON_PROP_IMAGE_SRC = "imageSrc";
 
+    private final String carouselID = UUID.randomUUID().toString();
     private ArrayList<HashMap<String, String>> carouselItems = new ArrayList<>();
 
     @Override
@@ -57,4 +59,7 @@ public class Carousel extends WCMUsePojo {
         return carouselItems;
     }
 
+    public String getCarouselID() {
+        return carouselID;
+    }
 }
