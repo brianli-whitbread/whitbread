@@ -1,0 +1,9 @@
+<sly data-sly-use.childPagesList="uk.co.whitbread.assignment.core.wcm.ChildPagesList">
+    <h3 data-sly-test="${properties.title}">${properties.title @ context='text'}</h3>
+    <ul data-sly-test.pages="${childPagesList.childPages}">
+        <sly data-sly-list.page="${pages}">
+            <li><a href="${page.path @ context='uri'}.html" alt="${page.title @ context='text'} link">${page.title @ context='text'}</a></li>
+        </sly>
+    </ul>
+</sly>
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="cq-placeholder" data-emptytext="List ${properties.parentPagePath ? '' : '(Please Set Parent Path)'}"></p>
