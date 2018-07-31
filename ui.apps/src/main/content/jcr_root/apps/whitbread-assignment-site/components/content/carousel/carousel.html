@@ -1,0 +1,13 @@
+<sly data-sly-use.carousel="uk.co.whitbread.assignment.core.wcm.Carousel">
+    ${carousel}
+    <ul data-sly-test.carouselItems="${carousel.carouselItems}">
+       <sly data-sly-test="${carouselItems}" data-sly-list.item="${carouselItems}">
+           <li>
+               <div>${item.title}</div>
+               <div>${item.description}</div>
+               <div>${item.imageSrc}</div>
+           </li>
+       </sly>
+    </ul>
+</sly>
+ss
