@@ -1,10 +1,10 @@
 # Whitbread Demostration Assignment Project
 
-This AEM 6.3 project is created to demonstrate my ability to build and deploy AEM projects and components. There are no package prerequisites for this project; only thing required is AEM 6.3 with a proper AEM license.
+This AEM 6.3 project is created to demonstrate my ability to build and deploy AEM projects and components. There are no package prerequisites for this project; the only thing required is AEM 6.3 with a proper AEM license.
 
 #####This project includes a number features:
 
-* ####One Page Content
+* ####One Page Content:
   * English page with example content
 
 * ####One Content Template Based on Requirements:
@@ -16,7 +16,7 @@ This AEM 6.3 project is created to demonstrate my ability to build and deploy AE
     * Inheritance Paragraph System
       * Text Foundation Component
       
-  * Content Section Body Area (BootStrap V3)
+  * Content Section Body Area (BootStrap V3) - main content section
       * Paragraph System 1
         * Text & Image Foundation Component
         * Image Foundation Component
@@ -24,7 +24,7 @@ This AEM 6.3 project is created to demonstrate my ability to build and deploy AE
         * Title Foundation Component
         * [Custom] Carousel Component 
         
-      * Paragraph System 2
+      * Paragraph System 2 - side bar section
         * Reference Foundation Component
         * Download Foundation Component
         * SiteMap Foundation Component
@@ -34,15 +34,15 @@ This AEM 6.3 project is created to demonstrate my ability to build and deploy AE
     * Inheritance Paragraph System
       * Text Foundation Component
 
-* ####Page component
+* ####Page Component:
   * Based on the [page AEM Core WCM Component](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page)
   * customfooterlibs.html and customheaderlibs.html snippet to load additional JS and CSS clientlibs according to the {cssId} property
   
-* ####Custom Content Components
+* ####Custom Content Components:
   * Carousel Component 
   * List Component
    
-* ####OSGI Bundle - WCMUsePojo Classes w/ Test Code
+* ####OSGI Bundle - WCMUsePojo Classes w/ Test Code:
   * Carousel
   * ChildPagesList
 
