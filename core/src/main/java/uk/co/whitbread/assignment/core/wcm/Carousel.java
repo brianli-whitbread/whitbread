@@ -25,7 +25,7 @@ public class Carousel extends WCMUsePojo {
     @Override
     public void activate() throws Exception {
 
-        String[] jsonObject = get(PROP_JSON, String[].class);
+        String[] jsonObject = getProperties().get(PROP_JSON, String[].class);
 
         // convert JSON string to object array
         if (jsonObject != null) {
