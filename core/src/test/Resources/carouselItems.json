@@ -1,0 +1,17 @@
+[
+  {
+    "title":"Lorem ipsum dolor sit amet",
+    "description":"<p>entum. Nulla vel rutrum ligula. Sed hendrerit interdum orci a posuere.<br>↵</p>↵",
+    "imageSrc":"/content/dam/whitbread-assignment-site/carousel/carousel-1.png"
+  },
+  {
+    "title":"Lorem ipsum dolor sit amet",
+    "description":"<p>entum. Nulla vel rutrum ligula. Sed hendrerit interdum orci a posuere.<br>↵</p>↵",
+    "imageSrc":"/content/dam/whitbread-assignment-site/carousel/carousel-2.png"
+  },
+  {
+    "title":"Lorem ipsum ",
+    "description":"<p>trum ligula. Sed hendrerit interdum orci a posuere.<br>↵</p>↵",
+    "imageSrc":"/content/dam/whitbread-assignment-site/carousel/carousel-3.png"
+  }
+]

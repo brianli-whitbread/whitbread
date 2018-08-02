@@ -5,7 +5,6 @@ import com.day.cq.wcm.api.Page;
 import org.apache.sling.api.resource.Resource;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ChildPagesList extends WCMUsePojo {
 
@@ -15,13 +14,16 @@ public class ChildPagesList extends WCMUsePojo {
 
     @Override
     public void activate() throws Exception {
-        String parentPagePath = getProperties().get(CRX_PROP_PARENT_PAGE_PATH, String.class);
+        setChildPages(getProperties().get(CRX_PROP_PARENT_PAGE_PATH, String.class));
+    }
+
+    private void setChildPages(String parentPagePath) {
         if (parentPagePath != null) {
             Resource pageResource = getResourceResolver().getResource(parentPagePath);
             if (pageResource != null) {
                 Page parentPage = pageResource.adaptTo(Page.class);
-                for (Iterator<Page> it = parentPage.listChildren(); it.hasNext(); ) {
-                    childPages.add(it.next());
+                if (parentPage != null) {
+                    parentPage.listChildren().forEachRemaining(childPages::add);
                 }
             }
         }
