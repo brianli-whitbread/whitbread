@@ -37,6 +37,7 @@ This AEM 6.3 project is created to demonstrate my ability to build and deploy AE
 * ####Page Component:
   * Based on the [page AEM Core WCM Component](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page)
   * customfooterlibs.html and customheaderlibs.html snippet to load additional JS and CSS clientlibs according to the {cssId} property
+  * Bootstrap3 2 Column Responsive Layout
   
 * ####Custom Content Components:
   * Carousel Component 
