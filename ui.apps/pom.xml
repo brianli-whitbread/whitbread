@@ -23,7 +23,7 @@
     <parent>
         <groupId>whitbread</groupId>
         <artifactId>whitbread-assignment-site</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -124,7 +124,7 @@
         <dependency>
             <groupId>whitbread</groupId>
             <artifactId>whitbread-assignment-site.core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>

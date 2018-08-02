@@ -19,7 +19,7 @@
     <groupId>whitbread</groupId>
     <artifactId>whitbread-assignment-site</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>whitbread-assignment-site</description>
 
     <modules>
