@@ -16,7 +16,7 @@
                 <text
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/text"
-                    text="&lt;p style=&quot;text-align: center;&quot;>WhitBread&lt;/p>&#xa;"
+                    text="&lt;p style=&quot;text-align: center;&quot;>WhitBread Header Banner&lt;/p>&#xa;"
                     textIsRich="true"/>
             </header-iparsys>
         </header>
@@ -46,13 +46,6 @@
                 alignment="left"
                 text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a tempus lacus. Aliquam erat volutpat. In dignissim auctor gravida. Donec tortor massa, cursus et faucibus ut, luctus a nibh. Donec eget hendrerit neque, et rhoncus tellus. Nam quis sagittis sapien. In vestibulum laoreet ullamcorper. Donec consectetur eu nisi vel molestie. Nullam risus magna, eleifend id odio vel, malesuada tincidunt quam. Sed vehicula tellus sollicitudin sagittis consequat. Maecenas dignissim sagittis consequat. Aliquam id sodales ante, consequat aliquam nibh. Mauris dolor tellus, egestas id leo vel, finibus dictum erat. Cras et orci a lectus luctus ullamcorper ut et tellus. Nam tincidunt velit eget lectus egestas, ac scelerisque eros convallis. In hac habitasse platea dictumst.&lt;/p>&#xa;&lt;p>Nam semper erat vel sem vulputate, et commodo orci sollicitudin. Nullam sit amet diam tempor ante tincidunt accumsan. Nullam consectetur, dolor a convallis venenatis, erat neque convallis purus, in eleifend sem eros nec lorem. Vivamus nec arcu non lorem sodales luctus. Sed placerat, orci ut ullamcorper convallis, libero tortor pellentesque sapien, accumsan fermentum felis velit vel felis. Donec viverra bibendum nisl, et tempus sem porta a. Sed aliquet, neque eu tincidunt sodales, tellus ante fermentum mauris, ac iaculis justo libero vel erat. Maecenas tempus est a metus mattis, sed maximus turpis venenatis. Nulla interdum mauris sed eleifend finibus. Proin eu turpis mi. Nunc vehicula ex eget enim molestie, vel varius neque lobortis. Nullam porttitor elit eget est molestie, in porttitor ex posuere. Vestibulum a nunc elementum, facilisis elit quis, volutpat libero. Curabitur varius eget sapien ac blandit. Mauris semper quis lacus ac rutrum.&lt;/p>&#xa;&lt;p>Nullam eget ipsum tempus, congue nunc non, imperdiet arcu. Nulla dictum varius ligula, a aliquet augue. Maecenas scelerisque quis est nec gravida. Aliquam et neque quis odio dignissim laoreet. Etiam et orci sem. In hac habitasse platea dictumst. Aenean at neque eros. Maecenas volutpat suscipit lectus molestie viverra.&lt;/p>&#xa;"
                 textIsRich="true">
-                <image
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="foundation/components/image"
-                    alt="Whitbread Header Content"
-                    fileReference="/content/dam/whitbread-assignment-site/whitbread-content-header.png"
-                    height="0"
-                    width="200"/>
             </textimage>
         </parsys2>
         <footer
@@ -64,7 +57,7 @@
                 <text
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/text"
-                    text="&lt;p style=&quot;text-align: center;&quot;>Footer Table of Contents&lt;/p>&#xa;"
+                    text="&lt;p style=&quot;text-align: center;&quot;>Whitbread Footer Contents&lt;/p>&#xa;"
                     textIsRich="true"/>
             </footer-iparsys>
         </footer>
