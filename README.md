@@ -1,6 +1,50 @@
 # Whitbread Demostration Assignment Project
 
-This project is to demonstrate my ability to build and deploy AEM projects and components. 
+This AEM 6.3 project is created to demonstrate my ability to build and deploy AEM projects and components. There are no package prerequisites for this project; only thing required is AEM 6.3 with a proper AEM license.
+
+#####This project includes a number features:
+
+* ####One Page Content
+  * English page with example content
+
+* ####One Content Template Based on Requirements:
+    The content template utilizes BootStrap 3 for the responsive layout; This template is a 2-column layout.
+    This template comprises of 3 sections of the page; the header, content, and footer sections of the page.
+    Each section of the page enables limited components for the authors use during content creation. Listed below is a detailed list of all the available components for a given paragraph system. 
+  
+  * Header Section Area 
+    * Inheritance Paragraph System
+      * Text Foundation Component
+      
+  * Content Section Body Area (BootStrap V3)
+      * Paragraph System 1
+        * Text & Image Foundation Component
+        * Image Foundation Component
+        * List Foundation Component
+        * Title Foundation Component
+        * [Custom] Carousel Component 
+        
+      * Paragraph System 2
+        * Reference Foundation Component
+        * Download Foundation Component
+        * SiteMap Foundation Component
+        * [Custom] List Component
+
+  * Footer Section Area
+    * Inheritance Paragraph System
+      * Text Foundation Component
+
+* ####Page component
+  * Based on the [page AEM Core WCM Component](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page)
+  * customfooterlibs.html and customheaderlibs.html snippet to load additional JS and CSS clientlibs according to the {cssId} property
+  
+* ####Custom Content Components
+  * Carousel Component 
+  * List Component
+   
+* ####OSGI Bundle - WCMUsePojo Classes w/ Test Code
+  * Carousel
+  * ChildPagesList
 
 ## Modules
 
@@ -22,15 +66,15 @@ If you have a running AEM instance you can build and package the whole project a
     
 Or to deploy it to a publish instance, run
 
-    mvn clean install -PautoInstallPackagePublish
+    mvn clean install -PautoInstallPackagePublish -Padobe-public
     
 Or alternatively
 
-    mvn clean install -PautoInstallPackage -Daem.port=4503
+    mvn clean install -PautoInstallPackage -Padobe-public -Daem.port=4503
 
 Or to deploy only the bundle to the author, run
 
-    mvn clean install -PautoInstallBundle
+    mvn clean install -PautoInstallBundle -Padobe-public
 
 ## Testing
 
