@@ -1,9 +1,7 @@
 package uk.co.whitbread.assignment.core.wcm;
 
 import com.day.cq.wcm.api.Page;
-import io.wcm.testing.mock.aem.junit.AemContext;
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -17,11 +15,8 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class ChildPagesListTest {
 
-    @Rule
-    public final AemContext context = new AemContext();
-
     @Mock
-    private ChildPagesList childPagesList;
+    private ChildPagesList childPagesList = mock(ChildPagesList.class);
 
     @Mock
     private Page page1 = mock(Page.class);
@@ -30,12 +25,12 @@ public class ChildPagesListTest {
     private Page page2 = mock(Page.class);
 
     @Test
-    public void testChildPagesCount0() {
+    public void testPassIfChildPagesHaveChildren() {
         Assert.assertTrue(childPagesList.getChildPages().size() == 0);
     }
 
     @Test
-    public void testChildPagesCountisGreaterThan1() {
+    public void testPassIfChildPagesHave2ChildPages() {
         ArrayList<Page> cPages = new ArrayList<>();
         cPages.add(page1);
         cPages.add(page2);

@@ -25,21 +25,21 @@ public class Carousel extends WCMUsePojo {
     @Override
     public void activate() throws Exception {
 
-        String[] jsonObject = getProperties().get(PROP_JSON, String[].class);
+        String[] jsonObject = get(PROP_JSON, String[].class);
 
         // convert JSON string to object array
         if (jsonObject != null) {
             try {
-                carouselItems = jsonStringToObectArray(jsonObject);
+                carouselItems = jsonStringToObjectArray(jsonObject);
             } catch (JSONException e) {
-                log.error("Json String To Object Array Error with data {}", e.getMessage(), e);
+                log.error("Wrong Format - {}", e.getMessage(), e);
             }
         } else {
             log.error("Data is not valid JSON.");
         }
     }
 
-    private ArrayList<HashMap<String, String>> jsonStringToObectArray(String[] jsonString) throws JSONException {
+    private ArrayList<HashMap<String, String>> jsonStringToObjectArray(String[] jsonString) throws JSONException {
         ArrayList<HashMap<String, String>> objectArray = new ArrayList<>();
         @SuppressWarnings("deprecation")
         JSONObject jObj;
